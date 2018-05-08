@@ -26,10 +26,13 @@ button {
     outline: none;
     border: none;
 }
-ul,a{
+
+ul,
+a {
     text-decoration: none;
     list-style-type: none;
 }
+
 //</公共
 //<清除浮动
 .clearfloat:after {
@@ -54,39 +57,41 @@ ul,a{
         background-size: cover;
         overflow: hidden;
     }
-
-    
-
-
     #shadow {
         width: 100%;
-        height: 100px;
+        height: 56px;
         box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.50);
         background-color: rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        
     }
     #box {
         width: 100%;
-        height: 100px;
-        position: relative;
-        // mask-image: url('/assets/img/login.png');
+        height: 56px;
+        position: relative; // mask-image: url('/assets/img/login.png');
         // -webkit-mask-image: url('/assets/img/login.png');
     }
     #bar {
         width: 100%;
-        height: 100px;
+        height: 56px;
         float: left;
         top: 0px;
         position: absolute;
         background-color: rgba(0, 0, 0, 0.30);
         overflow: hidden;
-        .header-title{
-            color: #fff;
-            font-size: 40px;
+        .header-title {
+            display: inline-block;
+            width: 250px;
+            height: 56px;
+            line-height: 56px;
+            margin-left: 100px;
+            img {
+                display: block;
+                line-height: 56px;
+                margin: 8px; 
+                width: 100%;
+            }
         }
     }
-    
 }
 
 //</header
@@ -102,7 +107,9 @@ ul,a{
     .svg-icon {
         cursor: pointer;
         path {
-            stroke: rgba(255, 255, 255, 0.9);
+            // stroke: rgba(255, 255, 255, 0.9);
+            // stroke: rgba(68, 68, 68,0.9);
+            stroke: rgba(0, 0, 0, 0.9);
             fill: none;
             stroke-width: 1;
         }
@@ -110,27 +117,22 @@ ul,a{
     .cont {
         position: relative;
         z-index: 100;
-        top: -100%;
-        height: 100%;
-        // background-image: url('/assets/img/login.png');
+        top: -90%;
+        height: 100%; // background-image: url('/assets/img/login.png');
         background-size: cover;
         overflow: auto;
         font-family: $openSans;
         ::-webkit-input-placeholder {
-            /* WebKit browsers */
-            color: rgb(211, 211, 211);
+            color: #666;
         }
         :-moz-placeholder {
-            /* Mozilla Firefox 4 to 18 */
-            color: rgb(211, 211, 211);
+            color: #666;
         }
         ::-moz-placeholder {
-            /* Mozilla Firefox 19+ */
-            color: rgb(211, 211, 211);
+            color: #666;
         }
         :-ms-input-placeholder {
-            /* Internet Explorer 10+ */
-            color: rgb(211, 211, 211);
+            color: #666;
         }
     }
     .demo {
@@ -143,12 +145,19 @@ ul,a{
         height: 53rem;
         overflow: hidden;
     }
-    .login {
-        border-radius: 2%;
+    .shadow {
         position: relative;
         height: 50%;
-        top: 25%;
-        background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+        top: 20%; // height: 100%;
+        box-shadow: -15px 10px 15px rgba(0, 0, 0, 0.5);
+        border-bottom-left-radius: 40px;
+    }
+    .login {
+        border-radius: 2%;
+        height: 100%;
+        position: relative; // background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+        //    background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgb(88, 155, 182) 100%);
+        background-color: #fff;
         transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
         transform: scale(1);
         &.inactive {
@@ -186,8 +195,8 @@ ul,a{
         }
         &__row {
             height: 5rem;
-            padding-top: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 1rem; // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         }
         &__icon {
             margin-bottom: -0.4rem;
@@ -210,7 +219,7 @@ ul,a{
             padding-left: 1.5rem;
             font-size: 1.5rem;
             background: transparent;
-            color: #FDFCFD;
+            color: #444;
         }
         &__submit {
             position: relative;
@@ -218,7 +227,7 @@ ul,a{
             height: 4rem;
             margin: 5rem 0 2.2rem;
             color: rgba(255, 255, 255, 0.8);
-            background: #FF3366;
+            background: #FF3366; // background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgb(88, 155, 182) 100%);
             font-size: 1.5rem;
             border-radius: 3rem;
             cursor: pointer;
@@ -249,7 +258,7 @@ ul,a{
                 }
             }
             &.success {
-                height:0;
+                height: 0;
                 transition: transform 0.3s 0.1s ease-out, opacity 0.1s 0.3s, background-color 0.1s 0.3s;
                 transform: scale(30);
                 opacity: 0.9; //background-color: rgba(255,255,255,0.95);

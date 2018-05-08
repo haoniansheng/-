@@ -20,7 +20,8 @@ button {
   outline: none;
   border: none; }
 
-ul, a {
+ul,
+a {
   text-decoration: none;
   list-style-type: none; }
 
@@ -44,25 +45,33 @@ ul, a {
     overflow: hidden; }
   #header #shadow {
     width: 100%;
-    height: 100px;
+    height: 56px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.2);
     overflow: hidden; }
   #header #box {
     width: 100%;
-    height: 100px;
+    height: 56px;
     position: relative; }
   #header #bar {
     width: 100%;
-    height: 100px;
+    height: 56px;
     float: left;
     top: 0px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
     overflow: hidden; }
     #header #bar .header-title {
-      color: #fff;
-      font-size: 40px; }
+      display: inline-block;
+      width: 250px;
+      height: 56px;
+      line-height: 56px;
+      margin-left: 100px; }
+      #header #bar .header-title img {
+        display: block;
+        line-height: 56px;
+        margin: 8px;
+        width: 100%; }
 
 #login {
   height: 100%; }
@@ -74,29 +83,25 @@ ul, a {
   #login .svg-icon {
     cursor: pointer; }
     #login .svg-icon path {
-      stroke: rgba(255, 255, 255, 0.9);
+      stroke: rgba(0, 0, 0, 0.9);
       fill: none;
       stroke-width: 1; }
   #login .cont {
     position: relative;
     z-index: 100;
-    top: -100%;
+    top: -90%;
     height: 100%;
     background-size: cover;
     overflow: auto;
     font-family: "Open Sans", Helvetica, Arial, sans-serif; }
     #login .cont ::-webkit-input-placeholder {
-      /* WebKit browsers */
-      color: lightgray; }
+      color: #666; }
     #login .cont :-moz-placeholder {
-      /* Mozilla Firefox 4 to 18 */
-      color: lightgray; }
+      color: #666; }
     #login .cont ::-moz-placeholder {
-      /* Mozilla Firefox 19+ */
-      color: lightgray; }
+      color: #666; }
     #login .cont :-ms-input-placeholder {
-      /* Internet Explorer 10+ */
-      color: lightgray; }
+      color: #666; }
   #login .demo {
     position: absolute;
     top: 50%;
@@ -106,12 +111,17 @@ ul, a {
     width: 30rem;
     height: 53rem;
     overflow: hidden; }
-  #login .login {
-    border-radius: 2%;
+  #login .shadow {
     position: relative;
     height: 50%;
-    top: 25%;
-    background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    top: 20%;
+    box-shadow: -15px 10px 15px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 40px; }
+  #login .login {
+    border-radius: 2%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
     transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
     transform: scale(1); }
     #login .login.inactive {
@@ -146,7 +156,7 @@ ul, a {
     #login .login__row {
       height: 5rem;
       padding-top: 1rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
     #login .login__icon {
       margin-bottom: -0.4rem;
       margin-right: 0.5rem; }
@@ -165,7 +175,7 @@ ul, a {
       padding-left: 1.5rem;
       font-size: 1.5rem;
       background: transparent;
-      color: #FDFCFD; }
+      color: #444; }
     #login .login__submit {
       position: relative;
       width: 100%;

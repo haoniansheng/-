@@ -16,40 +16,43 @@
                 <div id="shadow">
                     <div id="box">
                         <div id="bar">
-                            <!-- <a class="header-title" href="#">面试系统</a> -->
+                            <a class="header-title" href="#">
+                                <img src="assets/img/header-title.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="cont">
             <div class="demo">
-                <div class="login">
-                    <div class="login__form">
-                        <div class="login__row">
-                            <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
-                                <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
-                            </svg>
-                            <input type="text" class="login__input name" placeholder="用户名" />
-                        </div>
-                        <div class="login__row">
-                            <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
-                                <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
-                            </svg>
-                            <input type="password" class="login__input pass" placeholder="密码" />
-                        </div>
-                        <button type="button" class="login__submit">登录</button>
+                <div class="shadow">
+                    <div class="login">
+                        <div class="login__form">
+                            <div class="login__row">
+                                <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+                                    <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+                                </svg>
+                                <input type="text" class="login__input name" placeholder="用户名" />
+                            </div>
+                            <div class="login__row">
+                                <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+                                    <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+                                </svg>
+                                <input type="password" class="login__input pass" placeholder="密码" />
+                            </div>
+                            <button type="button" class="login__submit">登录</button>
 
+                        </div>
                     </div>
                 </div>
-                <div class="app">
+                <!-- <div class="app">
                     <div class="app__logout">
                         <svg class="app__logout-icon svg-icon" viewBox="0 0 20 20">
                             <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12" />
                         </svg>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -77,7 +80,7 @@
                 left: x
             })
             elem.append($ripple)
-        };
+        }
 
         $(".login__submit").on("click", function (e) {
             if (animating) return
@@ -85,40 +88,40 @@
             var that = this
             ripple($(that), e)
             $(that).addClass("processing")
-            setTimeout(function () {
-                $(that).addClass("success")
-                setTimeout(function () {
-                    $app.show();
-                    $app.css("top");
-                    $app.addClass("active")
-                }, submitPhase2 - 70);
-                setTimeout(function () {
-                    $login.hide();
-                    $login.addClass("inactive")
-                    animating = false;
-                    $(that).removeClass("success processing")
-                }, submitPhase2)
-            }, submitPhase1)
+            // setTimeout(function () {
+            //     $(that).addClass("success")
+            //     setTimeout(function () {
+            //         $app.show()
+            //         $app.css("top")
+            //         $app.addClass("active")
+            //     }, submitPhase2 - 70)
+            //     setTimeout(function () {
+            //         $login.hide()
+            //         $login.addClass("inactive")
+            //         animating = false
+            //         $(that).removeClass("success processing")
+            //     }, submitPhase2)
+            // }, submitPhase1)
         })
 
-        $(".app__logout").on("click", function (e) {
-            if (animating) return
-            $(".ripple").remove()
-            animating = true
-            var that = this
-            $(that).addClass("clicked")
-            setTimeout(function () {
-                $app.removeClass("active")
-                $login.show()
-                $login.css("top")
-                $login.removeClass("inactive")
-            }, logoutPhase1 - 120)
-            setTimeout(function () {
-                $app.hide()
-                animating = false
-                $(that).removeClass("clicked")
-            }, logoutPhase1)
-        })
+        // $(".app__logout").on("click", function (e) {
+        //     if (animating) return
+        //     $(".ripple").remove()
+        //     animating = true
+        //     var that = this
+        //     $(that).addClass("clicked")
+        //     setTimeout(function () {
+        //         $app.removeClass("active")
+        //         $login.show()
+        //         $login.css("top")
+        //         $login.removeClass("inactive")
+        //     }, logoutPhase1 - 120)
+        //     setTimeout(function () {
+        //         $app.hide()
+        //         animating = false
+        //         $(that).removeClass("clicked")
+        //     }, logoutPhase1)
+        // })
 
     })
 </script>
