@@ -1,0 +1,103 @@
+html {
+    background: #fff;
+}
+
+.content-wrapper {
+    background: #fff;
+}
+
+.content-header {
+    padding: 0px 15px 0 15px;
+}
+
+.wapper {
+    background: #fff;
+    .table.table-striped.table-bordered.table-hover {
+        input,
+        select {
+            height: 28px;
+            width: 180px;
+            option {
+                height: 28px;
+                width: 180px;
+            }
+        }
+        thead {
+            background: #fff;
+        }
+        tbody {
+            color: #444;
+            border: 1px solid #F1F2F4;
+            background: #F8F9FB;
+        }
+        td {
+            vertical-align: middle; // text-align: center;
+            border: 1px solid #E2E3E5;
+            border-left: none;
+            border-right: none;
+        }
+        th {
+            border: 1px solid #E2E3E5;
+            height: 50px;
+        }
+        td:nth-child(even) {
+            text-align: left;
+            line-height: 30px;
+            min-width: 100px;
+        }
+        td:nth-child(odd) {
+            text-align: right;
+            line-height: 30px;
+            min-width: 80px;
+        }
+        tr:nth-child(even) {
+            background: #fdfdfd;
+        }
+        tr:nth-child(odd) {
+            background: #F8F9FB;
+        }
+    }
+    td p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 60px;
+        margin: 0;
+    }
+    .content-header>.breadcrumb {
+        margin-top: 15px;
+    }
+    .content-header h1 {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E9E9E9;
+    }
+    .content-header>.breadcrumb {
+        background: #fff;
+    }
+    .row-fluid .breadcrumb {
+        background: #fff;
+        float: left;
+        li input {
+            border: 1px solid #0FBAC0;
+            outline: none;
+            border-color: #0FBAC0;
+            width: 70px;
+            background: #0FBAC0;
+            color: #fff;
+            height: 28px;
+            border-radius: 50px;
+            line-height: 14px;
+        }
+    }
+    .breadcrumb>li+li:before {
+        color: #fff;
+    }
+    .content-header .breadcrumb>li+li:before {
+        color: #444;
+    }
+}
+
+#updateForm {
+    .row-fluid:nth-child(2) {
+        float: right;
+    }
+}

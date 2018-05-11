@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-table.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div id="index" class="clearfloat">
+        <div id="header" class="clearfloat">
+            <div id="bbox">
+                <div id="shadow">
+                    <div id="box">
+                        <div id="bar">
+                            <a class="header-title" href="#">
+                                <img src="assets/img/header-title.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="content">
+                <div class="two">
+                    <div id="tips">
+                        <div class="page-header">
+                            <h2>
+                                <i class="fa fa-address-book-o"></i> 今日招聘一览</h2>
+                        </div>
+                        <table id="tipsTable">
+
+                            <thead>
+
+                            </thead>
+                        </table>
+                    </div>
+                    <div id="need">
+                        <div class="page-header">
+                            <h2>
+                                <i class="fa fa-address-book-o"></i> 招聘需求一览</h2>
+                        </div>
+                        <table id="needTable">
+
+                            <thead>
+
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="chrat">
+                        <div class="page-header">
+                            <h2>
+                                <i class="fa fa-address-book-o"></i> 简历来源情况分布</h2>
+                        </div>
+                        <div id="chart1"></div>
+                    </div>
+                </div>
+                <div class="two">
+                    <div id="">
+                        <div class="chrat">
+                            <div class="page-header">
+                                <h2>
+                                    <i class="fa fa-address-book-o"></i> 简历投递职位分布</h2>
+                            </div>
+                            <div id="chart2"></div>
+                        </div>
+                    </div>
+                    <div id="changeChart">
+                        <div class="chrat">
+                            <div class="page-header">
+                                <h2>
+                                    <i class="fa fa-address-book-o"></i> 简历投递职位分布</h2>
+                            </div>
+                            <div id="chart3"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="one">
+                    <div id="needForSee">
+                        <div class="page-header">
+                            <h2>
+                                <i class="fa fa-address-book-o"></i> 未处理简历一览</h2>
+                        </div>
+                        <table id="stuTable">
+                            <div class="stu-search-switch">
+                                <div class="search-head active col-xs-12">
+                                    指定搜索条件
+                                    <a class="btn btn-default toggle" data-toggle="collapse" href="#searchItem">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                </div>
+                                <div id="searchItem" class="collapse in  search-item col-xs-12 stu-search">
+                                    <div class="search-item col-xs-12 stu-search">
+                                        <div class="form-group col-xs-6 col-md-3">
+                                            <label class=" col-xs-12 control-label">姓名</label>
+                                            <div class="col-xs-12 ">
+                                                <input type="text" class="form-control" name="emp_name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xs-6 col-md-3">
+                                            <label class=" col-xs-12 control-label">简历编号</label>
+                                            <div class=" col-xs-12">
+                                                <input type="text" class="form-control" name="emp_name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xs-6 col-md-3">
+                                            <label for="basic" class="col-xs-12 control-label">处理状态</label>
+                                            <div class=" col-xs-12">
+                                                <select id="basic" class="selectpicker show-tick form-control" data-size="5">
+                                                    <option>---</option>
+                                                    <option>启用</option>
+                                                    <option>停用</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xs-6 col-md-3">
+                                            <label for="basic" class="col-xs-12 control-label">应聘职位</label>
+                                            <div class=" col-xs-12">
+                                                <select id="basic" class="selectpicker show-tick form-control" data-size="5">
+                                                    <option>---</option>
+                                                    <option>管理员</option>
+                                                    <option>老师</option>
+                                                    <option>领导</option>
+                                                    <option>实习生</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-12 stu-search-btn">
+                                        <a class="btn-search-reset btn btn-default" href="#">
+                                            <i class="fa fa-repeat "></i> 重置</a>
+                                        <a class="btn btn-primary" href="#">
+                                            <i class="fa fa-address-book-o"></i> 查询</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <thead>
+
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div style="height: 70px;width: 100px"></div>
+        </div>
+
+        <div id="footer" class="clearfloat">
+            <div id="bbox">
+                <div id="shadow">
+                    <div id="box">
+                        <div id="bar">
+                            <ul class="clearfloat">
+                                <li>
+                                    <a style="color:#317ef3" class="header-title" href="#">
+                                        <i class="fa fa-home"></i>
+                                        <p>首页</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header-title" href="#">
+                                        <i class="fa fa-home"></i>
+                                        <p>首页</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header-title" href="#">
+                                        <i class="fa fa-home"></i>
+                                        <p>首页</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header-title" href="#">
+                                        <i class="fa fa-home"></i>
+                                        <p>首页</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header-title" href="#">
+                                        <i class="fa fa-home"></i>
+                                        <p>首页</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/jquery-1.11.1.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-table.min.js"></script>
+<script src="assets/js/echarts.min.js"></script>
+<script>
+    $(function () {
+        var table3 = {
+            init: function () {
+                $('#tipsTable').bootstrapTable({
+                    data: [{
+                            "id": "1",
+                            "name": "java",
+                            "age": "11",
+                            "job": "总经理",
+                            "phone": "2018-01-01",
+                            "role": "5"
+                        },
+                        {
+                            "id": "2",
+                            "name": "java",
+                            "age": "21",
+                            "job": "主任",
+                            "phone": "2018-01-01",
+                            "role": "5"
+                        },
+                        {
+                            "id": "3",
+                            "name": "java",
+                            "age": "32",
+                            "job": "科长",
+                            "phone": "2018-01-01",
+                            "role": "5"
+                        },
+                        {
+                            "id": "2",
+                            "name": "java",
+                            "age": "21",
+                            "job": "主任",
+                            "phone": "2018-01-01",
+                            "role": "5"
+                        },
+
+                    ],
+                    pageSize: 5,
+                    striped: true,
+                    pagination: true,
+                    paginationVAlign: "top",
+                    paginationLoop: false,
+                    undefinedText: '暂无信息',
+                    smartDisplay: false,
+                    columns: [{
+                            align: 'center',
+                            valign: 'middle',
+                            title: '序号',
+                            formatter: function (values, row, index) {
+                                return index + 1;
+                            }
+                        },
+                        {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'name',
+                            title: '姓名'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'age',
+                            title: '预约时间'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'state',
+                            title: '操作',
+                            formatter: operateFormatter
+                        }
+                    ]
+                })
+
+
+                function operateFormatter(value, row, index) {
+                    return [
+                        '<button id="operateData" type="button" class="btn btn-primary"><i class="fa fa-edit"></i> </button> '
+                    ].join("")
+                }
+
+
+            },
+
+
+        }
+
+        table3.init()
+        var table2 = {
+            init: function () {
+                $('#needTable').bootstrapTable({
+                    data: [{
+                            "id": "1",
+                            "name": "java",
+                            "age": "11",
+                            "job": "总经理",
+                            "phone": "2018-01-01",
+                            "role": "5"
+                        },
+                        {
+                            "id": "2",
+                            "name": "java",
+                            "age": "21",
+                            "job": "主任",
+                            "phone": "2018-01-01",
+                            "role": "5"
+                        },
+                        {
+                            "id": "3",
+                            "name": "java",
+                            "age": "32",
+                            "job": "科长",
+                            "phone": "2018-01-01",
+                            "role": "5"
+                        },
+                        {
+                            "id": "2",
+                            "name": "java",
+                            "age": "21",
+                            "job": "主任",
+                            "phone": "2018-01-01",
+                            "role": "5"
+                        }
+                    ],
+                    pageSize: 5,
+                    striped: true,
+                    pagination: true,
+                    paginationVAlign: "top",
+                    paginationLoop: false,
+                    undefinedText: '暂无信息',
+                    smartDisplay: false,
+                    columns: [{
+                            align: 'center',
+                            valign: 'middle',
+                            title: '序号',
+                            formatter: function (values, row, index) {
+                                return index + 1;
+                            }
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'id',
+                            title: '需求编号'
+                        },
+                        {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'name',
+                            title: '需求职位'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'age',
+                            title: '总人数'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'role',
+                            title: '剩余人数'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'phone',
+                            title: '发布日期'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'state',
+                            title: '操作',
+                            formatter: operateFormatter
+                        }
+                    ]
+                })
+
+
+                function operateFormatter(value, row, index) {
+                    return [
+                        '<button id="operateData" type="button" class="btn btn-primary"><i class="fa fa-edit"></i> </button> '
+                    ].join("")
+                }
+
+
+            },
+
+
+        }
+
+        table2.init()
+
+
+        var table = {
+            init: function () {
+                $('#stuTable').bootstrapTable({
+                    data: [{
+                            "id": "1",
+                            "name": "张三",
+                            "age": "11",
+                            "job": "总经理",
+                            "phone": "17676765468",
+                            "role": "java"
+                        },
+                        {
+                            "id": "2",
+                            "name": "李四",
+                            "age": "21",
+                            "job": "主任",
+                            "phone": "13587394871",
+                            "role": "java"
+                        },
+                        {
+                            "id": "3",
+                            "name": "王大锤",
+                            "age": "32",
+                            "job": "科长",
+                            "phone": "1375942945",
+                            "role": "java"
+                        },
+                        {
+                            "id": "2",
+                            "name": "李四",
+                            "age": "21",
+                            "job": "主任",
+                            "phone": "13587394871",
+                            "role": "java"
+                        },
+                        {
+                            "id": "4",
+                            "name": "周五五",
+                            "age": "44",
+                            "job": "实习生",
+                            "phone": "8174732847",
+                            "role": "java"
+                        }, {
+                            "id": "2",
+                            "name": "李四",
+                            "age": "21",
+                            "job": "主任",
+                            "phone": "13587394871",
+                            "role": "java"
+                        },
+                        {
+                            "id": "5",
+                            "name": "网六六",
+                            "age": "24",
+                            "job": "总裁",
+                            "phone": "5718591851",
+                            "role": "java"
+                        }, {
+                            "id": "3",
+                            "name": "大锤",
+                            "age": "32",
+                            "job": "科长",
+                            "phone": "1375942945",
+                            "role": "java"
+                        },
+                        {
+                            "id": "1",
+                            "name": "三",
+                            "age": "11",
+                            "job": "总经理",
+                            "phone": "17676765468",
+                            "role": "java"
+                        }, {
+                            "id": "4",
+                            "name": "周五",
+                            "age": "41",
+                            "job": "实习生",
+                            "phone": "8174732847",
+                            "role": "java"
+                        }, {
+                            "id": "1",
+                            "name": "张三",
+                            "age": "124",
+                            "job": "总经理",
+                            "phone": "432526765468",
+                            "role": "java"
+                        },
+                        {
+                            "id": "1",
+                            "name": "张三",
+                            "age": "11",
+                            "entryDate": "2018-01-01",
+                            "job": "总经理",
+                            "phone": "2343253265",
+                            "role": "java"
+                        },
+                        {
+                            "id": "1",
+                            "name": "张三",
+                            "age": "11",
+                            "entryDate": "2018-01-01",
+                            "job": "总经理",
+                            "phone": "17676765468",
+                            "role": "java"
+                        },
+                        {
+                            "id": "1",
+                            "name": "张三",
+                            "age": "11",
+                            "entryDate": "2234-01-01",
+                            "job": "总经理",
+                            "phone": "17676765468",
+                            "role": "java"
+                        },
+                        {
+                            "id": "1",
+                            "name": "张三",
+                            "age": "11",
+                            "entryDate": "2018-01-01",
+                            "job": "java",
+                            "phone": "17676765468",
+                            "role": "java"
+                        },
+                        {
+                            "id": "1",
+                            "name": "张三",
+                            "age": "11",
+                            "entryDate": "2018-01-01",
+                            "job": "总经理",
+                            "phone": "17676765468",
+                            "role": "java"
+                        },
+
+                    ],
+                    pageSize: 5,
+                    striped: true,
+                    pagination: true,
+                    paginationVAlign: "top",
+                    paginationLoop: false,
+                    undefinedText: '暂无信息',
+                    smartDisplay: false,
+                    columns: [{
+                            align: 'center',
+                            valign: 'middle',
+                            title: '序号',
+                            formatter: function (values, row, index) {
+                                return index + 1;
+                            }
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'id',
+                            title: '简历编号'
+                        },
+                        {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'name',
+                            title: '姓名'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'age',
+                            title: '年龄'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'phone',
+                            title: '联系电话'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'role',
+                            title: '应聘职位'
+                        }, {
+                            align: 'center',
+                            valign: 'middle',
+                            field: 'state',
+                            title: '操作',
+                            formatter: operateFormatter
+                        }
+                    ]
+                })
+
+
+                function operateFormatter(value, row, index) {
+                    return [
+                        '<button id="operateData" type="button" class="btn btn-primary"><i class="fa fa-edit"></i> </button> ' +
+                        '<button id = "viewData" type = "button" class="btn btn-danger"><i class= "fa fa-th"></i> </button>'
+                    ].join("")
+                }
+
+
+            },
+
+
+        }
+
+        table.init()
+        var search = {
+            init: function () {
+                $('#searchItem').on('hide.bs.collapse', function () {
+                    $(".search-head i").removeClass("active")
+                })
+                $('#searchItem').on('show.bs.collapse', function () {
+                    $(".search-head").addClass("active")
+                    $(".search-head i").addClass("active")
+                })
+
+                $('#searchItem').on('hidden.bs.collapse', function () {
+                    $(".search-head").removeClass("active")
+                })
+            }
+        }
+        search.init()
+
+
+        var chart = {
+            start: function () {
+                var chart1 = echarts.init(document.getElementById('chart1'), 'light')
+                var chart2 = echarts.init(document.getElementById('chart2'), 'light')
+                var chart3 = echarts.init(document.getElementById('chart3'), 'light')
+                var option1 = this.init1();
+                var option2 = this.init2();
+                var option3 = this.init2();
+                chart1.setOption(option1);
+
+                chart2.setOption(option2);
+                chart3.setOption(option3);
+            },
+            init1: function () {
+                // app.title = '堆叠柱状图';
+                option = {
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+                        }
+                    },
+                    legend: {
+                        data: ['直接投递', '招聘网站', '58同城', '智联招聘', '前程无忧', '其他', '是否社招', '必应', '其他',
+                            '总人数'
+                        ]
+                    },
+                    // grid: {
+                    //     left: '3%',
+                    //     right: '4%',
+                    //     bottom: '3%',
+                    //     containLabel: true
+                    // },
+                    xAxis: [{
+                        type: 'category',
+                        data: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月',
+                            '十一月', '十二月'
+                        ]
+                    }],
+                    yAxis: [{
+                        type: 'value'
+                    }],
+                    series: [{
+                            name: '直接投递',
+                            type: 'bar',
+                            data: [320, 332, 301, 334, 390, 330, 320, 201, 154, 190, 330, 410]
+                        },
+                        {
+                            name: '58同城',
+                            type: 'bar',
+                            stack: '招聘网站',
+                            data: [120, 132, 101, 134, 90, 230, 210, 201, 154, 190, 330, 410]
+                        },
+                        {
+                            name: '智联招聘',
+                            type: 'bar',
+                            stack: '招聘网站',
+                            data: [220, 182, 191, 234, 290, 330, 310, 201, 154, 190, 330, 410]
+                        },
+                        {
+                            name: '前程无忧',
+                            type: 'bar',
+                            stack: '招聘网站',
+                            data: [150, 232, 201, 154, 190, 330, 410, 201, 154, 190, 330, 410]
+                        },
+                        {
+                            name: '其他',
+                            type: 'bar',
+                            stack: '招聘网站',
+                            data: [150, 232, 201, 154, 201, 330, 410, 190, 154, 190, 330, 410]
+                        },
+                        {
+                            name: '总人数',
+                            type: 'bar',
+                            barWidth: 15,
+                            stack: '人数',
+                            data: [800, 900, 1000, 1100, 1630, 1820, 800, 900, 1290, 1000, 1100,
+                                1890
+                            ]
+                        }
+                    ]
+                }
+                return option
+            },
+            init2: function () {
+                option = {
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        orient: 'vertical',
+                        left: 'left',
+                        data: ['职位1', '职位2', '职位3', '职位4', '职位5']
+                    },
+                    series: [{
+                        name: '访问来源',
+                        type: 'pie',
+                        radius: '55%',
+                        center: ['50%', '60%'],
+                        data: [{
+                                value: 335,
+                                name: '职位1'
+                            },
+                            {
+                                value: 310,
+                                name: '职位2'
+                            },
+                            {
+                                value: 234,
+                                name: '职位3'
+                            },
+                            {
+                                value: 135,
+                                name: '职位4'
+                            },
+                            {
+                                value: 1548,
+                                name: '职位5'
+                            }
+                        ],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }]
+                };
+                return option
+            }
+        }
+        chart.start()
+    })
+</script>
+
+</html>
